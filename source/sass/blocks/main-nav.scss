@@ -1,0 +1,28 @@
+.main-nav {
+  background-color: #32425c;
+  padding: 0 25px 0 23px;
+  box-shadow: 0 5px 0 0 #293449;
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+    li {
+      font-size: 17px;
+      font-family: Cuprum;
+      line-height: 1;
+      display: inline-flex;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 20px 30px 18px;
+    }
+  }
+}

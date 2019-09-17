@@ -1,0 +1,22 @@
+header {
+  background-color: #293449;
+}
+
+body {
+  font: 13px/24px $cuprum;
+}
+
+.grey-background {
+  background-color: #f1f5f7;
+  padding: 32px 0 65px 0;
+}
+
+.new::after {
+  content: "";
+  position: absolute;
+  background: url("../img/new-flag.png") no-repeat;
+  width: 60px;
+  height: 59px;
+  top: 0;
+  right: 0;
+}
