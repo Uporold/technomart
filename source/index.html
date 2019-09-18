@@ -132,9 +132,9 @@
 
         <div class="popular-products__wrapper">
 
-          <div class="popular-products__top">
-            <h2 class="popular-products__header">Популярные товары:</h2>
-            <a href="#" class="popular-products__button btn btn--rounded btn--red">Все популярные товары</a>
+          <div class="popular">
+            <h2 class="popular__header">Популярные товары:</h2>
+            <a href="#" class="popular__button btn btn--rounded btn--red">Все популярные товары</a>
           </div>
 
           <div class="popular-products__list">
@@ -193,22 +193,78 @@
 
     <section class="popular-manufacturer container">
       <div class="popular-manufacturer__wrapper">
-        <div class="popular-manufacturer__top popular-products__top">
-            <h2 class="popular-manufacturer__header popular-products__header">Популярные производители:</h2>
-            <a href="#" class="popular-products__button btn btn--rounded btn--red">Все производители</a>
+        <div class="popular">
+            <h2 class="popular__header">Популярные производители:</h2>
+            <a href="#" class="popular__button btn btn--rounded btn--red">Все производители</a>
         </div>
         <div class="popular-manufacturer__list">
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
-      <article class="popular-manifacturer__item"></article>
+   <a href="#" class="popular-manifacturer__item">
+     <img src="img/bosch.png" alt="bosch logo" width="126" height="37">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/makita.png" alt="bosch logo" width="123" height="40">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/dewalt.png" alt="bosch logo" width="146" height="44">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/interskol.png" alt="bosch logo" width="200" height="88">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/hitachi.png" alt="bosch logo" width="169" height="31">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/lg.png" alt="bosch logo" width="121" height="73">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/aeg.png" alt="bosch logo" width="151" height="96">
+   </a>
+   <a href="#" class="popular-manifacturer__item">
+    <img src="img/metabo.png" alt="bosch logo" width="204" height="69">
+   </a>
     </div>
     </div>
     </section>
+
+<section class="services">
+    <div class="container">
+      <div class="services__intro">
+        <h2 class="services__header"> Сервисы</h2>
+        <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      </div>
+      <div class="services__information">
+          <input type="radio" name="service-switcher" id="delivery" class="services__switcher1" checked>
+          <input type="radio" name="service-switcher" class="services__switcher2" id="guarantee">
+          <input type="radio" name="service-switcher" class="services__switcher3" id="credit">
+          <div class="services__switchers">
+          <label class="services__label" for="delivery">Доставка</label>
+          <label class="services__label" for="guarantee">Гарантия</label>
+          <label class="services__label" for="credit">Кредит</label>
+        </div>
+       <div class="services__content">
+          <div class="services__slide">
+            <h3>Доставка</h3>
+            <p class="slide-text slide-text--delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br>
+              поднимая его на ваш этаж!</p>
+          </div>
+          <div class="services__slide">
+            <h3>Гарантия</h3>
+            <p class="slide-text slide-text--guarantee">Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+              Дом уж восстановите как-нибудь сами.</p>
+          </div>
+          <div class="services__slide">
+            <h3>Кредит</h3>
+            <p class="slide-text slide-text--credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <a href="#"class="slide-button btn btn--red btn--rounded">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
 
 </body>
 </html>

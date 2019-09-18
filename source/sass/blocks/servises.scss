@@ -1,0 +1,140 @@
+.services {
+  background-color: #f2f6f8;
+  padding-top: 68px;
+  padding-bottom: 100px;
+
+  &__content {
+    .services__slide {
+      width: 620px;
+      display: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+      }
+
+      &:nth-child(1)::before {
+        width: 468px;
+        height: 261px;
+        top: 27px;
+        right: 0;
+        background-image: url("../img/delivery-background.png");
+      }
+
+      &:nth-child(2)::before {
+        width: 389px;
+        height: 283px;
+        top: 5px;
+        right: 0;
+        background-image: url("../img/garant-background.png");
+      }
+
+      &:nth-child(3)::before {
+        width: 465px;
+        height: 285px;
+        top: 4px;
+        right: 0;
+        background-image: url("../img/credit-background.png");
+      }
+
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #32425c;
+        font-family: $cuprum;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .slide-button {
+        width: 195px;
+      }
+
+      .slide-text {
+        font-size: 13px;
+        line-height: 24px;
+        font-family: $pt-sans;
+        color: black;
+
+        &--delivery {
+          width: 275px;
+        }
+
+        &--guarantee {
+          width: 375px;
+        }
+
+        &--credit {
+          width: 280px;
+        }
+      }
+    }
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      display: none;
+    }
+  }
+
+  .services__switcher1:checked ~ .services__content .services__slide:nth-child(1),
+  .services__switcher2:checked ~ .services__content .services__slide:nth-child(2),
+  .services__switcher3:checked ~ .services__content .services__slide:nth-child(3) {
+    display: block;
+  }
+
+  .services__switcher1:checked ~ .services__switchers label[for="delivery"],
+  .services__switcher2:checked ~ .services__switchers label[for="guarantee"],
+  .services__switcher3:checked ~ .services__switchers label[for="credit"] {
+    color: #32425c;
+    background: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &__switchers {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      width: 240px;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px 140px 20px 22px;
+      background-color: #32425c;
+      border-bottom: 1px solid #293449;
+      border-top: 1px solid #405069;
+      color: white;
+      font-size: 21px;
+      line-height: 21px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  &__intro {
+    width: 400px;
+    margin-bottom: 74px;
+  }
+
+  &__header {
+    font-family: $cuprum;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: $pt-sans;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
