@@ -85,6 +85,7 @@
   .services__switcher1:checked ~ .services__content .services__slide:nth-child(1),
   .services__switcher2:checked ~ .services__content .services__slide:nth-child(2),
   .services__switcher3:checked ~ .services__content .services__slide:nth-child(3) {
+    animation: slide 550ms ease-in;
     display: block;
   }
 
