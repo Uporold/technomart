@@ -1,0 +1,67 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-bottom: 86px;
+
+  &__company {
+    width: 520px;
+  }
+  &__title {
+    font-family: $cuprum;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $pt-sans;
+    font-size: 13px;
+    line-height: 1.85;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 36px;
+  }
+
+  &__item {
+    position: relative;
+    font-family: $cuprum;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 18px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 2px;
+      background-color: #fb565a;
+      top: 9px;
+      left: -36px;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    margin-top: 14px;
+
+    &--contacts {
+      width: 300px;
+      margin-top: 40px;
+    }
+  }
+
+  &__contacts {
+    width: 300px;
+  }
+
+}
+

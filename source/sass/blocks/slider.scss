@@ -22,8 +22,8 @@
   &__controls label {
     width: 6px;
     height: 6px;
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1;
@@ -65,14 +65,12 @@
     display: block;
     background: url("../img/puncher-man.jpg") no-repeat;
     animation: slide 550ms ease;
-
   }
 
   &__switcher2:checked ~ &__content &__slide:nth-child(2) {
     display: block;
     background: url("../img/drill-man.jpg") no-repeat;
     animation: slide 550ms ease-out;
-
   }
 
   &__switcher1:checked ~ &__controls label[for="slider__switcher1"] {

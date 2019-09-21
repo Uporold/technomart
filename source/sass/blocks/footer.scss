@@ -1,0 +1,129 @@
+.footer {
+  background-color: #32425c;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 53px;
+  }
+
+  &__logo {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    width: 220px;
+    padding: 20px 0 20px 0;
+    background-color: #ee3643;
+    box-shadow: #b52933 0 5px;
+    color: white;
+  }
+
+  &__contacts-text {
+    font-family: $cuprum;
+    font-size: 18px;
+    color: white;
+    width: 323px;
+    margin: 0;
+    margin-top: 37px;
+  }
+
+  &__right-navigation {
+    width: 550px;
+  }
+
+  &__nav {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding-top: 43px;
+
+    &--bottom {
+      padding-left: 23px;
+    }
+  }
+
+  &__nav-item {
+    font-family: $cuprum;
+    font-size: 18px;
+    line-height: 1;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+    }
+
+    &--bottom a {
+      color: #ffd180;
+    }
+  }
+
+  &__bottom {
+    background-color: #293449;
+    padding-top: 39px;
+    padding-bottom: 35px;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    width: 228px;
+    line-height: 1.13;
+    margin: 0;
+    font-family: $cuprum;
+    font-size: 16px;
+    color: white;
+  }
+
+  &__social {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 134px;
+    margin: 0;
+  }
+
+  &__social-item {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      background-color: #212a3a;
+    }
+  }
+
+  &__feedback,
+  &__made-by {
+    margin: 0;
+    line-height: 1.13;
+    color: white;
+    font-family: $cuprum;
+    font-size: 16px;
+
+    a {
+      text-decoration: none;
+      color: #ffd180;
+    }
+  }
+  &__feedback {
+    width: 135px;
+  }
+
+  &__made-by {
+    width: 96px;
+    padding-right: 15px;
+  }
+}
