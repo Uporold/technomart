@@ -1,0 +1,124 @@
+.left-bar {
+  width: 220px;
+
+  &__field {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    border: none;
+
+    &--manufacturer {
+      margin-top: 25px;
+      border-bottom: solid 1px #e5e5e5;
+    }
+
+    &--battery {
+      margin-top: 26px;
+    }
+
+    legend {
+      font-family: $pt-sans;
+      font-size: 17px;
+      font-weight: 600;
+      color: black;
+      line-height: 1.76;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__bar-header {
+    background-color: #f7f3ec;
+    padding: 7px 0 7px 18px;
+    box-sizing: border-box;
+  }
+
+  &__bar-header-text {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $pt-sans;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 27px;
+
+      label {
+        position: relative;
+        font-family: $pt-sans;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 1.33;
+        color: black;
+        padding-left: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__checkbox + .checkbox-label::before,
+  &__radio + .radio-label::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: -2px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+  &__checkbox:checked + .checkbox-label::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    width: 7px;
+    height: 16px;
+    border-right: 5px solid  #c5c5c5;
+    border-bottom: 5px solid  #c5c5c5;
+    transform: rotate(45deg);
+    box-shadow: 2px 0 0 0 white, inset -2px 0 0 0 white;
+
+  }
+
+  &__radio + .radio-label::before {
+    border-radius: 50%;
+  }
+
+  &__radio:checked + .radio-label::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+  }
+
+  &__checkbox:hover + .checkbox-label::before,
+  &__checkbox:checked:hover + .checkbox-label::after,
+  &__radio:hover + .radio-label::before,
+  &__radio:checked:hover + .radio-label::after {
+    color: #9b9b9b;
+  }
+
+  &__button {
+    width: 140px;
+    border: solid 1px #e5e5e5;
+    color: black;
+    line-height: 1.38;
+    text-transform: uppercase;
+    font-family: $pt-sans;
+    font-size: 13px;
+    padding: 10px 0 9px 0;
+  }
+}

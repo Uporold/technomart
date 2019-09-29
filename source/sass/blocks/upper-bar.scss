@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  margin-top: 14px;
 
   &__description {
     font-family: $cuprum;
@@ -12,13 +13,16 @@
     color: red;
     padding-left: 52px;
     line-height: 1.44;
+
+    p {
+      margin: 0;
+    }
   }
 
   &__upper-contacts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 14px;
 
     &-phone-number {
       box-sizing: border-box;
@@ -44,10 +48,47 @@
 
   &__autentification {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 14px;
-    width: 281px;
+    width: 300px;
+
+    &--logged {
+      justify-content: normal;
+      flex-direction: column;
+    }
+  }
+
+  &__user-menu {
+    display: flex;
+  }
+
+  &__autentification-menu {
+    position: relative;
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    margin-top: 4px;
+    font-size: 16px;
+    padding-left: 17px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 5px;
+      background: #32425c;
+      border-radius: 50%;
+      left: 107px;
+      top: 10px;
+    }
+
+    a {
+
+      color: #32425c;
+      font-family: $cuprum;
+    }
+
   }
 
   &__button {
@@ -60,6 +101,7 @@
       position: relative;
       padding: 12px 24px 12px 48px;
       width: 121px;
+      margin-left: 19px;
 
       &::before {
         position: absolute;
@@ -75,6 +117,27 @@
     &--registration {
       padding: 12px 24px 12px 24px;
       width: 150px;
+    }
+
+    &--user {
+      text-align: left;
+      padding: 12px 0 12px 48px;
+      width: 255px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+      }
+    }
+
+    &--logout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
     }
   }
 }
