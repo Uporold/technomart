@@ -7,19 +7,15 @@
   &__company {
     width: 520px;
   }
+
   &__title {
-    font-family: $cuprum;
-    font-size: 30px;
-    line-height: 1;
+    @include font($cuprum, 30px, 400, 30px, uppercase, $black);
     margin: 0;
     margin-bottom: 28px;
-    text-transform: uppercase;
   }
 
   &__text {
-    font-family: $pt-sans;
-    font-size: 13px;
-    line-height: 1.85;
+    @include font($pt-sans, 13px, 400, 24px, none, $black);
     margin: 0;
     margin-bottom: 30px;
   }
@@ -31,11 +27,8 @@
   }
 
   &__item {
+    @include font($cuprum, 18px, 400, 20px, none, $black);
     position: relative;
-    font-family: $cuprum;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
     margin-bottom: 18px;
 
     &::before {
@@ -43,7 +36,7 @@
       content: "";
       width: 25px;
       height: 2px;
-      background-color: #fb565a;
+      background-color: $red-line;
       top: 9px;
       left: -36px;
     }

@@ -7,13 +7,13 @@
     a {
       width: 220px;
       box-sizing: border-box;
-      border: 1px solid #e5e5e5;
+      border: 1px solid $mercury-border;
       height: 145px;
       margin-bottom: 20px;
       display: inline-flex;
 
       &:hover {
-        box-shadow: 0 0 7px #aeb2ba;
+        box-shadow: 0 0 7px $bombay-box-shadow;
       }
 
       img {

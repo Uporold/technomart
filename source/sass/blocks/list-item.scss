@@ -1,15 +1,14 @@
 .list-item {
   box-sizing: border-box;
   width: 220px;
-  //height: 318px;
-  border: solid 1px #eaeaea;
+  border: solid 1px $mercury-border;
   text-align: center;
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
 
   &:hover {
-    box-shadow: 0 0 7px #aeb2ba;
+    box-shadow: 0 0 7px $bombay-box-shadow;
 
     .list-item__popup {
       display: block;
@@ -17,35 +16,25 @@
   }
 
   &__header {
-    font-family: $pt-sans;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 20px;
-    margin: auto 25px;
-    margin-bottom: 10px;
+    @include font($pt-sans, 18px, 600, 20px, none, $black);
+    margin: auto 25px 10px;
   }
 
   &__old-price {
+    @include font($pt-sans, 17px, 600, 18px, none, #a9a9a9);
     display: block;
-    font-family: $pt-sans;
-    font-size: 17px;
-    font-weight: bold;
-    color: #a9a9a9;
     height: 24px;
   }
 
   &__price {
+    @include font($pt-sans, 17px, 600, 18px, none, $white);
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 135px;
     height: 38px;
-    background-color: #ee3643;
-    color: white;
-    font-family: $pt-sans;
-    font-size: 17px;
-    font-weight: bold;
+    background-color: $amaranth-button;
     border-radius: 4px;
     margin-top: 6px;
 
@@ -54,11 +43,10 @@
       content: "";
       top: 0;
       right: -26px;
-      border: 19px solid #ee3643;
-      border-right-color: white;
-      border-top-color: white;
-      border-bottom-color: white;
-      //transform: rotate(180deg);
+      border: 19px solid $amaranth-button;
+      border-right-color: $white;
+      border-top-color: $white;
+      border-bottom-color: $white;
     }
   }
 
@@ -67,24 +55,24 @@
     position: absolute;
     top: 0;
     padding: 41px;
-    background: #ffffff;
+    background: $white;
   }
 
   &__button {
     width: 135px;
 
     &--buy {
-      background-color: #63a63e;
-      box-shadow: 0 3px 0 #367315;
+      background-color: $green;
+      box-shadow: 0 3px 0 $green-box-shadow;
       padding: 8px 0 6px;
       margin-bottom: 8px;
     }
 
     &--mark {
       color: #32425c;
-      border: 3px solid #63a63e;
+      border: 3px solid $green;
       padding: 4px 0;
-      background-color: #ffffff;
+      background-color: $white;
     }
   }
 }

@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 
   &__main {
     width: 700px;
@@ -9,7 +10,7 @@
 
   &__sorting {
     padding: 7px 0 7px 19px;
-    background-color: #f7f3ec;
+    background-color: $ecru-white-sorting;
     display: flex;
     align-items: center;
     margin-bottom: 21px;
@@ -52,22 +53,22 @@
     }
 
     .arrow-up {
-      border-bottom: 10px solid #ee3643;
+      border-bottom: 10px solid $amaranth-button;
     }
 
     .arrow-down {
-      border-top: 10px solid #ee3643;
+      border-top: 10px solid $amaranth-button;
     }
   }
 
   &__sorting-link {
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
-    border-bottom: 1px dotted red;
+    border-bottom: 1px dotted $amaranth-button;
 
     &--active {
       border: none;
-      color: red;
+      color: $amaranth-button;
     }
   }
 
@@ -81,25 +82,24 @@
     display: flex;
 
     .paginator__item {
+      @include font($pt-sans, 13px, 400, 18px, uppercase, $black);
       display: flex;
       align-items: center;
       justify-content: center;
       width: 38px;
       height: 38px;
       border: solid 1px #e5e5e5;
-      font-family: $pt-sans;
-      font-size: 13px;
-      color: black;
-      text-transform: uppercase;
       border-radius: 1px;
       margin-right: 10px;
 
       &--next {
         width: 140px;
       }
+
       &--active {
         border: none;
-        background-color: #ee3643;
+        background-color: $amaranth-button;
+        color: $white;
       }
     }
   }

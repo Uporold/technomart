@@ -1,5 +1,5 @@
 .footer {
-  background-color: #32425c;
+  background-color: $pickled-bluewood;
 
   &__top {
     display: flex;
@@ -8,22 +8,19 @@
   }
 
   &__logo {
+    @include font($cuprum, 30px, 400, 24px, uppercase, $white);
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
     text-align: center;
     width: 220px;
     padding: 20px 0 20px 0;
     background-color: #ee3643;
-    box-shadow: #b52933 0 5px;
+    box-shadow: darken($amaranth-button, 25%) 0 5px;
     color: white;
   }
 
   &__contacts-text {
-    font-family: $cuprum;
-    font-size: 18px;
-    color: white;
+    @include font($cuprum, 18px, 400, 24px, none, $white);
     width: 323px;
     margin: 0;
     margin-top: 37px;
@@ -48,18 +45,16 @@
   }
 
   &__nav-item {
-    font-family: $cuprum;
-    font-size: 18px;
-    line-height: 1;
+    @include font($cuprum, 18px, 400, 18px, none, $white);
 
     a {
-      color: white;
+      color: $white;
       text-decoration: none;
 
     }
 
     &--bottom a {
-      color: #ffd180;
+      color: $footer-grandis;
     }
   }
 
@@ -76,12 +71,9 @@
   }
 
   &__copyright {
+    @include font($cuprum, 16px, 400, 18px, none, $white);
     width: 228px;
-    line-height: 1.13;
     margin: 0;
-    font-family: $cuprum;
-    font-size: 16px;
-    color: white;
   }
 
   &__social {
@@ -107,11 +99,8 @@
 
   &__feedback,
   &__made-by {
+    @include font($cuprum, 16px, 400, 18px, none, $white);
     margin: 0;
-    line-height: 1.13;
-    color: white;
-    font-family: $cuprum;
-    font-size: 16px;
 
     a {
       text-decoration: none;

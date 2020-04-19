@@ -1,0 +1,33 @@
+.close-cross {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  top: 14px;
+  right: 9px;
+  opacity: 0.3;
+
+  &::before {
+    content: "";
+    transform: rotate(45deg);
+    top: 9px;
+    right: -4px;
+    position: absolute;
+    width: 29px;
+    height: 4px;
+    background-color: $red-line;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    content: "";
+    top: 9px;
+    right: -4px;
+    position: absolute;
+    width: 29px;
+    height: 4px;
+    background-color: $red-line;
+  }
+}

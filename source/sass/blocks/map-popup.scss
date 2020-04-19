@@ -1,0 +1,15 @@
+.map-popup {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  height: 446px;
+  z-index: 1000;
+  box-shadow: 0 2px 50px rgba(0,0,0,.5);
+  animation: popup-open 450ms ease-out;
+}
+
+.show {
+  display: block;
+}
