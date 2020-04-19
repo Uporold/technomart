@@ -284,7 +284,9 @@
     <h2 class="about__title">Контакты</h2>
     <p class="about__text">Вы можете забрать товар сами, <br>
         заехав в наш офис.</p>
-    <img src="img/map.png" alt="" width="300" height="158" class="about__map-img">
+    <a href="#" class="about__map-link">
+      <img src="img/map.png" alt="" width="300" height="158" class="about__map-img">
+    </a>
     <a href="#" class="about__button about__button--contacts btn btn--rounded btn--red">Заблудились? Напишите нам!</a>
   </div>
 </section>
@@ -370,5 +372,59 @@
   </div>
 </footer>
 
+<div class="message-us">
+    <form action="post" novalidate="">
+        <fieldset>
+
+            <div class="message-us__input-wrapper">
+                <div class="message-us__input message-us__input--data">
+                    <label for="name" class="text-input">Ваше имя:</label>
+                    <input type="text" id="name" class="text-field" name="name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$">
+                </div>
+
+                <div class="message-us__input message-us__input--data">
+                    <label for="mail" class="text-input">Ваш email:</label>
+                    <input type="text" id="email" name="email" class="text-field" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+
+            <div class="message-us__input message-us__input--textarea">
+                <label for="message" class="text-input">Текст письма:</label>
+                <textarea id="message" class="text-field" name="message" placeholder="В свободной форме" rows="5"></textarea>
+            </div>
+
+          </div>
+
+            <div class="message-us__button-wrapper">
+                <button type="submit" class="btn btn--red btn--rounded message-us__button">Отправить</button>
+            </div>
+
+            <button type="button" class="close-cross close-cross--form">
+                <span class="visually-hidden">Скрыть форму </span>
+            </button>
+        </fieldset>
+    </form>
+</div>
+
+<div class="map-popup">
+    <button type="button" class="close-cross">
+        <span class="visually-hidden">Скрыть форму </span>
+    </button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.211479112242!2d30.31892544635698!3d59.93897340148991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472808971872" width="940" height="446" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  </div>
+
+<div class="popup-cart">
+    <button type="button" class="close-cross popup-cart__close-cross">
+        <span class="visually-hidden">Скрыть форму </span>
+    </button>
+  <div class="popup-cart__message-wrapper">
+  <h3 class="popup-cart__message">Товар добавлен в корзину!</h3>
+</div>
+  <div class="popup-cart__buttons-wrapper">
+    <a href="" class="btn btn--red btn--rounded popup-cart__button">Оформить заказ</a>
+    <a href="" class="btn btn--rounded popup-cart__button popup-cart__button--white">Продолжить покупки</a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>

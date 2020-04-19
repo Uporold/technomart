@@ -1,0 +1,16 @@
+.product {
+  background-color: $grey-product;
+  padding-top: 67px;
+  padding-bottom: 73px;
+
+  &__title {
+    @include font($cuprum, 30px, 400, 30px, uppercase, $black);
+    margin: 0;
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    @include font($pt-sans, 13px, 400, 24px, none, $black);
+    margin: 0;
+  }
+}

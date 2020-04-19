@@ -1,5 +1,6 @@
 @import "normalize";
 @import "variables";
+@import "mixins";
 @import "scaffolding";
 @import "blocks/btn";
 @import "blocks/container";
@@ -19,4 +20,8 @@
 @import "blocks/left-bar";
 @import "blocks/price-filter";
 @import "blocks/catalog";
-
+@import "blocks/product";
+@import "blocks/popup-cart";
+@import "blocks/message-us";
+@import "blocks/close-cross";
+@import "blocks/map-popup";

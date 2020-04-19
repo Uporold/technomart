@@ -30,9 +30,9 @@
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #fff;
-    background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border: 8px solid $white;
+    background-color: $mercury-border;
+    box-shadow: 0 2px 1px 0 $bombay-box-shadow;
     border-radius: 50%;
     cursor: pointer;
 
@@ -52,15 +52,13 @@
 
 
     .price {
+      @include font($pt-sans, 17px, 400, 18px, none, $black);
       width: 95px;
       height: 38px;
       box-sizing: border-box;
       border: none;
-      background-color: #f7f3ec;
+      background-color: $ecru-white-sorting;
       text-align: center;
-      font-family: $pt-sans;
-      font-size: 17px;
-      line-height: 1;
     }
   }
 }

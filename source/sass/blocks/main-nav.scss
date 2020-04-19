@@ -1,7 +1,8 @@
 .main-nav {
-  background-color: #32425c;
+  background-color: $pickled-bluewood;
   padding: 0 25px 0 23px;
-  box-shadow: 0 5px 0 0 #293449;
+  //box-shadow: 0 5px 0 0 $pickled-bluewood-box-shadow;
+  box-shadow: 0 5px 0 0 darken($pickled-bluewood, 5%);
 
   &__links {
     display: flex;
@@ -13,14 +14,12 @@
     justify-content: space-between;
 
     li {
-      font-size: 17px;
-      font-family: Cuprum;
-      line-height: 1;
+      @include font($cuprum, 17px, 400, 18px, none, $white);
       display: inline-flex;
     }
 
     a {
-      color: white;
+      color: $white;
       text-decoration: none;
       padding: 20px 30px 18px;
     }
